@@ -46,6 +46,40 @@
   right: 0;
 }
 
+.switch-bank {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.switch-bank .switch {
+  display: inline-block;
+  position: relative;
+  padding: 2px;
+  width: 60px;
+  height: 30px;
+  background-color: yellowgreen;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 3px 3px 9px green;
+}
+
+.switch-bank .switch .button {
+  border-radius: 20px;
+  position: absolute;
+  width: 50%;
+  height: 90%;
+  background-color: green;
+}
+
+.switch-bank .switch .button-left {
+  left: 0;
+}
+
+.switch-bank .switch .button-right {
+  right: 0;
+}
+
 .drum-pads {
   width: 90%;
   max-width: 400px;
