@@ -1,0 +1,30 @@
+.power {
+    text-align: center;
+    font-size: 1.2em;
+    .switch {
+        display: inline-block;
+        position: relative;
+        padding: 2px;
+        width: 60px;
+        height: 30px;
+        background-color: yellowgreen;
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 3px 3px 9px green;
+
+        .button {
+            border-radius: 20px;
+            position: absolute;
+            width: 50%;
+            height: 90%;
+            background-color: green;
+        }
+
+        .button-left {
+            left: 0;
+        }
+        .button-right {
+            right: 0;
+        }
+    }
+}

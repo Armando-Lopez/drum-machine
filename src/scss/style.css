@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#display {
+  width: fit-content;
+  height: 1.1em;
+  margin: 0.4em auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.power {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.power .switch {
+  display: inline-block;
+  position: relative;
+  padding: 2px;
+  width: 60px;
+  height: 30px;
+  background-color: yellowgreen;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 3px 3px 9px green;
+}
+
+.power .switch .button {
+  border-radius: 20px;
+  position: absolute;
+  width: 50%;
+  height: 90%;
+  background-color: green;
+}
+
+.power .switch .button-left {
+  left: 0;
+}
+
+.power .switch .button-right {
+  right: 0;
+}
+
+.drum-pads {
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 70px);
+  grid-row-gap: 7px;
+  grid-column-gap: 7px;
+  background-color: green;
+  border-radius: 20px;
+}
+
+.drum-pads .drum-pad {
+  max-width: 150px;
+  font-weight: 1000;
+  font-size: 2em;
+  outline-style: none;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px 3px 3px wheat;
+  cursor: pointer;
+}
+
+.drum-pads .drum-pad:active {
+  background-color: #b3b1b1;
+  transform: translate(0, 3px);
+  box-shadow: 2px 3px 1px wheat;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  overflow: hidden;
+  background-color: cyan;
+}
+
+#drum-machine {
+  height: fit-content;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 10vh;
+  padding: 1em;
+  background-color: orange;
+}
+/*# sourceMappingURL=style.css.map */

@@ -3,39 +3,37 @@ import React from 'react';
 class DrumPad extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            audio: undefined
-        }
+
+        this.audio = React.createRef();
         this._play = this._play.bind(this);
     }
 
     componentDidMount() {
-        this.setState({
-            audio: this.props.audio
-        })
+        document.addEventListener("keydown", (ev) => {
+            if (ev.keyCode === this.props.keycode) {
+                this._play();
+            }
+        });
     }
 
-    _play() {
-        const audio = document.getElementById(this.state.audio.keyTrigger)
-        audio.currentTime = 0;
-        audio.play();
+    _play(ev) {
+        if (this.props.power) {
+            document.getElementById('display').innerText = this.props.audioId
+            let audio = this.audio.current;
+            audio.currentTime = 0;
+            audio.play();
+        }
     }
 
     render() {
-        const { audio } = this.state;
-        if (!audio) {
-            return null
-        }
+        const { text, audiosrc } = this.props;
 
         return (
-
-            <div name={audio.id} className="drum-pad">
-                <button onClick={this._play}>
-                    {audio.keyTrigger}
-                </button>
-                <audio id={audio.keyTrigger} src={audio.url} className="clip"></audio>
-            </div>
-        );
+            <button id={text} className="drum-pad" onClick={this._play}>
+                {text}
+                <audio src={audiosrc} id={text} className="clip" ref={this.audio} />
+            </button>
+        )
     }
 }
 

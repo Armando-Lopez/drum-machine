@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "components/display";
+@import "components/power";
+@import "components/drumpad";
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    overflow: hidden;
+    background-color: cyan;
+}
+
+#drum-machine {
+    height: fit-content;
+    max-width: 600px;
+
+    margin: auto;
+    margin-top: 10vh;
+    // height: 500px;
+    padding: 1em;
+    background-color: orange;
+}
