@@ -9,8 +9,8 @@ $drumColor: #d94929;
 $keyBoardBG: #733224;
 $keyBG: #f29544;
 $switchBG: #f29544;
-$on: white;
-$off: black;
+$on: $drumColor;
+$off: $drumColor;
 
 @import "components/display";
 @import "components/power";
@@ -52,4 +52,9 @@ hr {
     background-color: rgb(179, 177, 177);
     transform: translate(0, 3px);
     box-shadow: 2px 3px 1px wheat;
+}
+
+.author {
+    text-align: center;
+    margin: 1em;
 }

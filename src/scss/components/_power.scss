@@ -10,22 +10,21 @@
         background-color: $switchBG;
         border-radius: 20px;
         cursor: pointer;
-        box-shadow: 3px 3px 9px green;
+        box-shadow: 3px 3px 9px $keyBoardBG;
 
         .button {
             border-radius: 20px;
             position: absolute;
             width: 50%;
             height: 90%;
+            background-color: $bgColor;
         }
 
         .button-left {
             left: 0;
-            background-color: $on;
         }
         .button-right {
             right: 0;
-            background-color: $off;
         }
     }
 }
