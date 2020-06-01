@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+$bgColor: #f2d377;
+$drumColor: #d94929;
+$keyBoardBG: #733224;
+$keyBG: #f29544;
+$switchBG: #f29544;
+$on: white;
+$off: black;
+
 @import "components/display";
 @import "components/power";
 @import "components/switchbank";
@@ -16,7 +24,8 @@ html {
 body {
     font-family: "Courier New", Courier, monospace;
     overflow: hidden;
-    background-color: cyan;
+    background-color: $bgColor;
+    color: $bgColor;
 }
 
 #drum-machine {
@@ -27,5 +36,20 @@ body {
     margin-top: 10vh;
     // height: 500px;
     padding: 1em;
-    background-color: orange;
+    background-color: $drumColor;
+    border-radius: 20px;
+}
+
+hr {
+    position: absolute;
+    left: 0;
+    border: 1px solid $bgColor;
+    background-color: $bgColor;
+    width: 100%;
+}
+
+.active {
+    background-color: rgb(179, 177, 177);
+    transform: translate(0, 3px);
+    box-shadow: 2px 3px 1px wheat;
 }

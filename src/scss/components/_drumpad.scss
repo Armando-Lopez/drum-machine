@@ -10,7 +10,7 @@
     grid-row-gap: 7px;
     grid-column-gap: 7px;
 
-    background-color: green;
+    background-color: $keyBoardBG;
     border-radius: 20px;
 
     .drum-pad {
@@ -23,13 +23,13 @@
 
         border: none;
         border-radius: 10px;
-        background-color: white;
+        background-color: $keyBG;
         box-shadow: 2px 3px 3px wheat;
 
         cursor: pointer;
 
         &:active {
-            background-color: rgb(179, 177, 177);
+            background-color: #c97e3c;
             transform: translate(0, 3px);
             box-shadow: 2px 3px 1px wheat;
         }

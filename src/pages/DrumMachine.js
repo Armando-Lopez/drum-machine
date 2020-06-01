@@ -60,6 +60,9 @@ class DrumMachine extends React.Component {
                         <DrumPad audioId={audio.id} audiosrc={audio.url} text={audio.keyTrigger} key={index} keycode={audio.keyCode} power={power} />
                     ))}
                 </div>
+                <p>
+                    Created By Diego López
+                </p>
             </section>
         );
     }
